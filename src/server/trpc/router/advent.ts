@@ -1,54 +1,23 @@
 import { publicProcedure, router } from "../trpc";
-import fs from "fs";
-import path from "path";
+import { day1 } from "../../../days/day1";
+import { day2 } from "../../../days/day2";
+import { z } from "zod";
+import { create } from "../../../../scripts/create-test-data";
 
 export const adventRouter = router({
-  day1: publicProcedure.query(({ input }) => {
-    // read the file
-    const p = path.join(process.cwd(), "src", "testData", "day1.txt");
-    const data = fs.readFileSync(p, "utf8");
-    // separate by blank lines
-    const lines = data.split("\r\n\r");
-    // split each line into an array of numbers
-    const map = lines.map((line) => {
-      const nums = line.split("\r\n");
-      return nums.map((num) => parseInt(num));
-    });
-    const orderedBySum = [...map]
-      .sort((a, b) => {
-        const sumA = a.reduce((acc, curr) => acc + curr, 0);
-        const sumB = b.reduce((acc, curr) => acc + curr, 0);
-        return sumB - sumA;
-      })
-      .slice(0, 3)
-      .map((arr) => {
-        return {
-          sum: arr.reduce((acc, curr) => acc + curr, 0),
-        };
-      });
-    // find the index of the array that has the max sum of numbers
-    const maxIndex = map.reduce((acc: any, curr, index) => {
-      const sum = curr.reduce((a, c) => a + c, 0);
-      const accSum = acc.sum
-        ? acc.sum
-        : acc.reduce((a: number, c: number) => a + c, 0);
+  testData: publicProcedure
+    .input(z.object({ day: z.number() }))
+    .mutation(({ input }) => {
+      create(input.day);
 
-      if (sum > accSum) {
-        return { index, sum };
-      }
-      return acc;
-    }) as any as { index: number; sum: number };
-
-    return {
-      question1: {
-        map,
-        index: maxIndex.index,
-        sum: maxIndex.sum,
-      },
-      question2: {
-        orderedBySum,
-        sumOfTop3: orderedBySum.reduce((acc, curr) => acc + curr.sum, 0),
-      },
-    };
+      return {
+        done: true,
+      };
+    }),
+  day1: publicProcedure.query(() => {
+    return day1();
+  }),
+  day2: publicProcedure.query(() => {
+    return day2();
   }),
 });

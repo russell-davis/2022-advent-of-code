@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70ea9d8-e54c-440d-8e62-1c284907dc9f" name="Changes" comment="init + day 1">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="c70ea9d8-e54c-440d-8e62-1c284907dc9f" name="Changes" comment="readme">
+      <change afterPath="$PROJECT_DIR$/scripts/create-test-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/days/day1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_day.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/day2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/_day.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/day1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/day2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testData/day2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/readTextFile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/day1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/day1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +29,14 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -44,26 +66,41 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/src/server/trpc/router&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/src/testData&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JavaScript&quot;,
+      &quot;TypeScript&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\testData" />
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\components" />
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\days" />
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\server\trpc\router" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\components\day1.tsx" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.test">
     <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="day1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/days/day1.js" working-dir="$PROJECT_DIR$/scripts/days">
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -76,10 +113,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Node.js.day1.js" />
         <item itemvalue="npm.dev" />
         <item itemvalue="HTTP Request.rest-api_2 | #1" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +142,10 @@
       <option name="presentableId" value="Default" />
       <updated>1669903025687</updated>
       <workItem from="1669903026973" duration="7340000" />
-      <workItem from="1669912301572" duration="486000" />
+      <workItem from="1669912301572" duration="746000" />
+      <workItem from="1669929513687" duration="9117000" />
+      <workItem from="1669942932154" duration="169000" />
+      <workItem from="1669943117076" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="init + day 1">
       <created>1669912135794</created>
@@ -101,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669912135794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="readme">
+      <created>1669913054014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669913054014</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +182,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init + day 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="init + day 1" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
 </project>
