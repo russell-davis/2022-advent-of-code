@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70ea9d8-e54c-440d-8e62-1c284907dc9f" name="Changes" comment="readme">
-      <change afterPath="$PROJECT_DIR$/scripts/create-test-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/days/day1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/_day.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/day2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/_day.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/day1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/day2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testData/day2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/readTextFile.ts" afterDir="false" />
+    <list default="true" id="c70ea9d8-e54c-440d-8e62-1c284907dc9f" name="Changes" comment="checking">
+      <change afterPath="$PROJECT_DIR$/scripts/days/data/day1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/days/data/day2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/days/day2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/create-test-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/days/day1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/days/day2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/day1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/day1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testData/day2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/testData/day2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,9 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2IJcFaRzS0Ekd77D5pQTQzUMPBP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,7 +62,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/src/testData&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/scripts/days/data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -84,10 +80,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\scripts\days\data" />
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src" />
+      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\scripts\days" />
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\testData" />
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\components" />
-      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\days" />
-      <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\server\trpc\router" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\components\day1.tsx" />
@@ -96,7 +93,7 @@
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.solve">
     <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -108,6 +105,16 @@
       <command value="run" />
       <scripts>
         <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="solve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="solve" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -125,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.solve" />
         <item itemvalue="npm.test" />
         <item itemvalue="Node.js.day1.js" />
         <item itemvalue="npm.dev" />
         <item itemvalue="HTTP Request.rest-api_2 | #1" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +152,8 @@
       <workItem from="1669912301572" duration="746000" />
       <workItem from="1669929513687" duration="9117000" />
       <workItem from="1669942932154" duration="169000" />
-      <workItem from="1669943117076" duration="541000" />
+      <workItem from="1669943117076" duration="9386000" />
+      <workItem from="1669992330859" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="init + day 1">
       <created>1669912135794</created>
@@ -161,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669913054014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="checking">
+      <created>1669943790932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669943790932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +198,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init + day 1" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="checking" />
   </component>
 </project>
