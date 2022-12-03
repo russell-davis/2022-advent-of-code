@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <div className="font-bold">Day {activePage}</div>
         {activePage === 1 && <Day1 />}
         {activePage === 2 && <Day2 />}
-        {activePage === 2 && <Day3 />}
+        {activePage === 3 && <Day3 />}
       </Stack>
     </Container>
   );

@@ -1,8 +1,8 @@
 import { trpc } from "../utils/trpc";
 import { Day } from "./_day";
 
-export const Day2 = () => {
-  const query = trpc.advent.day2.useQuery();
+export const Day3 = () => {
+  const query = trpc.advent.day3.useQuery();
 
   if (query.isLoading) {
     return <div>Loading...</div>;
@@ -18,9 +18,9 @@ export const Day2 = () => {
 
   return (
     <Day
-      dayNumber={2}
-      q1={<div>{query.data.question1.toString()}</div>}
-      q2={<>{query.data.question2.toString()}</>}
+      dayNumber={3}
+      q1={<>{JSON.stringify(query.data.question1)}</>}
+      q2={<>{JSON.stringify(query.data.question2)}</>}
     />
   );
 };

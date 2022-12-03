@@ -38,6 +38,11 @@ export const Day = (props: {
       {!isAvailable && <div className="font-bold">Not available yet.</div>}
       {!isAvailable && <Text>Available in: {availableIn}</Text>}
 
+        <Stack>
+            <div>Prompt:</div>
+            <div></div>
+        </Stack>
+
       <div>
         <Text
           variant={"link"}
