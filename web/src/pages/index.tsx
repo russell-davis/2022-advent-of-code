@@ -3,6 +3,7 @@ import { Container, Pagination, Stack } from "@mantine/core";
 import { useState } from "react";
 import { Day1 } from "../components/day1";
 import { Day2 } from "../components/day2";
+import {Day3} from "../components/day3";
 
 const Home: NextPage = () => {
   const dayOfMonth = new Date().getDate();
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <div className="font-bold">Day {activePage}</div>
         {activePage === 1 && <Day1 />}
         {activePage === 2 && <Day2 />}
+        {activePage === 2 && <Day3 />}
       </Stack>
     </Container>
   );
