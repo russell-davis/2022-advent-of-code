@@ -1,8 +1,8 @@
 import { trpc } from "../utils/trpc";
-import { Day } from "./Day";
+import { Day } from "./_day";
 
-export const Day99 = () => {
-  const query = trpc.advent.day99.useQuery(undefined, {
+export const Day4 = () => {
+  const query = trpc.advent.day4.useQuery(undefined, {
     refetchInterval: 5000,
   });
 
@@ -20,7 +20,7 @@ export const Day99 = () => {
 
   return (
     <Day
-      dayNumber={dayNumber99}
+      dayNumber={4}
       q1={<>{JSON.stringify(query.data.question1)}</>}
       q2={<>{JSON.stringify(query.data.question2)}</>}
     />

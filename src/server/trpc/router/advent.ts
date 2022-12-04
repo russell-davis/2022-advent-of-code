@@ -3,7 +3,9 @@ import { day1 } from "../../../days/day1";
 import { day2 } from "../../../days/day2";
 import { z } from "zod";
 import { create } from "../../../../scripts/create-test-data";
-import {day3} from "../../../days/day3";
+import { day3 } from "../../../days/day3";
+import { day4 } from "../../../days/day4";
+// REPLACER:IMPORTS //
 
 export const adventRouter = router({
   testData: publicProcedure
@@ -24,4 +26,8 @@ export const adventRouter = router({
   day3: publicProcedure.query(() => {
     return day3();
   }),
+  day4: publicProcedure.query(() => {
+    return day4();
+  }),
+  // REPLACER:ENTRY //
 });
