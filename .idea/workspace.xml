@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="generate script">
-      <change afterPath="$PROJECT_DIR$/src/components/day5.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/data/day5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/day5.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="day 5">
+      <change afterPath="$PROJECT_DIR$/src/components/day88.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/data/day88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/day88.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,7 @@
       <updated>1670080491719</updated>
       <workItem from="1670080494003" duration="6132000" />
       <workItem from="1670177475591" duration="6400000" />
-      <workItem from="1670257887413" duration="11933000" />
+      <workItem from="1670257887413" duration="12697000" />
     </task>
     <task id="LOCAL-00001" summary="day 3 init">
       <created>1670081097692</created>
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670183918282</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="day 5">
+      <created>1670270045692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670270045692</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +194,7 @@
     <MESSAGE value="day 3 checking" />
     <MESSAGE value="day 4" />
     <MESSAGE value="generate script" />
-    <option name="LAST_COMMIT_MESSAGE" value="generate script" />
+    <MESSAGE value="day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5" />
   </component>
 </project>
