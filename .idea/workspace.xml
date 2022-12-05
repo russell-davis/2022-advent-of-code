@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="day 3 checking">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/generate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Day.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/day4.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/data/day4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/day4.ts" afterDir="false" />
+    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="generate script">
+      <change afterPath="$PROJECT_DIR$/src/components/day5.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/data/day5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/days/day5.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_day.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_day.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldavis/Documents/code/projects/2022-advent-of-code/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ldavis\\Documents\\code\\projects\\2022-advent-of-code\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code\src\components" />
@@ -78,7 +76,7 @@
       <recent name="C:\Users\ldavis\Documents\code\projects\2022-advent-of-code" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.gen">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -114,8 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.gen" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.gen" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="HTTP Request.rest-api_2 | #1" />
       </list>
@@ -130,7 +128,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670080491719</updated>
       <workItem from="1670080494003" duration="6132000" />
-      <workItem from="1670177475591" duration="6167000" />
+      <workItem from="1670177475591" duration="6400000" />
+      <workItem from="1670257887413" duration="11933000" />
     </task>
     <task id="LOCAL-00001" summary="day 3 init">
       <created>1670081097692</created>
@@ -153,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670086248757</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day 4">
+      <created>1670183852859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670183852859</updated>
+    </task>
+    <task id="LOCAL-00005" summary="generate script">
+      <created>1670183918282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670183918282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +188,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="day 3 init" />
     <MESSAGE value="day 3 checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 3 checking" />
+    <MESSAGE value="day 4" />
+    <MESSAGE value="generate script" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate script" />
   </component>
 </project>
