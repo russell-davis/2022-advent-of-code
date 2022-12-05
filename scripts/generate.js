@@ -47,6 +47,15 @@ if (fs.existsSync(dayCommandPath)) {
 } else {
   fs.copyFileSync(dayCommandTemplatePath, dayCommandPath);
   console.info("Day command created!");
+
+  // replace template with day number
+  const dayCommand = fs.readFileSync(dayCommandPath, "utf8");
+  const dayCommandUpdated = dayCommand
+    .replace(/export const day =/g, `export const day${nowDay} =`)
+    .replace(/const day = 0;/g, `const day = ${nowDay};`);
+
+  fs.writeFileSync(dayCommandPath, dayCommandUpdated);
+  console.info("Day command updated!");
 }
 
 // create router entry
@@ -63,7 +72,7 @@ if (!fs.existsSync(routerFile)) {
   console.error("Router file not found!");
   process.exit(1);
 }
-const newRouterImports = `import { day4 } from "../../../days/day4";
+const newRouterImports = `import { day${nowDay} } from "../../../days/day${nowDay}";
 // REPLACER:IMPORTS //`;
 const newRouterEntry = `day${nowDay}: publicProcedure.query(() => {
     return day${nowDay}();
@@ -126,18 +135,21 @@ if (!fs.existsSync(indexPath)) {
   process.exit(1);
 }
 const indexFileContent = fs.readFileSync(indexPath, "utf-8");
+
+const newIndexFileContent = indexFileContent
+  .replace(
+    "// Replacer:imports //",
+    `import { Day${nowDay} } from "../components/day${nowDay}";
+    // Replacer:imports //`
+  )
+  .replace(
+    "{/*// Replacer:day //*/}",
+    `{activePage === ${nowDay} && <Day${nowDay} />}
+        {/*// Replacer:day //*/}`
+  );
+// console.info("newIndexFileContent", newIndexFileContent);
 if (indexFileContent.includes(`<Day${nowDay} />`)) {
   console.info("Index file already updated, skipping...");
 } else {
   fs.writeFileSync(indexPath, newIndexFileContent);
 }
-const newIndexFileContent = indexFileContent
-  .replace(
-    "// Replacer:imports //",
-    'import { Day4 } from "../components/day4";'
-  )
-  .replace(
-    "{/*// Replacer:day //*/}",
-    "{activePage === 4 && <Day4 />}\n{/*// Replacer:day //*/}"
-  );
-// console.info("newIndexFileContent", newIndexFileContent);
