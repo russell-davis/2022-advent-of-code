@@ -6,7 +6,8 @@ import { Day2 } from "../components/day2";
 import { Day3 } from "../components/day3";
 import { Day4 } from "../components/day4";
 import { Day5 } from "../components/day5";
-// Replacer:imports //
+import { Day6 } from "../components/day6";
+    // Replacer:imports //
 
 const Home: NextPage = () => {
   const dayOfMonth = new Date().getDate();
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         {activePage === 3 && <Day3 />}
         {activePage === 4 && <Day4 />}
         {activePage === 5 && <Day5 />}
+        {activePage === 6 && <Day6 />}
         {/*// Replacer:day //*/}
       </Stack>
     </Container>

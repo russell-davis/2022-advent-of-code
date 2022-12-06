@@ -6,6 +6,7 @@ import { create } from "../../../../scripts/create-test-data";
 import { day3 } from "../../../days/day3";
 import { day4 } from "../../../days/day4";
 import { day5 } from "../../../days/day5";
+import { day6 } from "../../../days/day6";
 // REPLACER:IMPORTS //
 
 export const adventRouter = router({
@@ -32,6 +33,9 @@ export const adventRouter = router({
   }),
   day5: publicProcedure.query(() => {
     return day5();
+  }),
+  day6: publicProcedure.query(() => {
+    return day6();
   }),
   // REPLACER:ENTRY //
 });
