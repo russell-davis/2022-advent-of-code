@@ -8,6 +8,7 @@ import { Day4 } from "../components/day4";
 import { Day5 } from "../components/day5";
 import { Day6 } from "../components/day6";
     import { Day7 } from "../components/day7";
+    import { Day8 } from "../components/day8";
     // Replacer:imports //
 
 const Home: NextPage = () => {
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         {activePage === 5 && <Day5 />}
         {activePage === 6 && <Day6 />}
         {activePage === 7 && <Day7 />}
+        {activePage === 8 && <Day8 />}
         {/*// Replacer:day //*/}
       </Stack>
     </Container>

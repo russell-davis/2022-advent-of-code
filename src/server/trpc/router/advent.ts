@@ -8,6 +8,7 @@ import { day4 } from "../../../days/day4";
 import { day5 } from "../../../days/day5";
 import { day6 } from "../../../days/day6";
 import { day7 } from "../../../days/day7";
+import { day8 } from "../../../days/day8";
 // REPLACER:IMPORTS //
 
 export const adventRouter = router({
@@ -40,6 +41,9 @@ export const adventRouter = router({
   }),
   day7: publicProcedure.query(() => {
     return day7();
+  }),
+  day8: publicProcedure.query(() => {
+    return day8();
   }),
   // REPLACER:ENTRY //
 });
