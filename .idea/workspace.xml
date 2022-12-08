@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="day 7 fail">
-      <change afterPath="$PROJECT_DIR$/src/components/day8.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/data/day8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/days/day8.ts" afterDir="false" />
+    <list default="true" id="dfa41c6e-3e6b-462d-8c21-82545607c9a6" name="Changes" comment="day 8 part1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/trpc/router/advent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/days/day8.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/days/day8.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +126,7 @@
       <workItem from="1670302676064" duration="1730000" />
       <workItem from="1670426434979" duration="27379000" />
       <workItem from="1670509116834" duration="412000" />
-      <workItem from="1670509748397" duration="6019000" />
+      <workItem from="1670509748397" duration="11862000" />
     </task>
     <task id="LOCAL-00001" summary="day 3 init">
       <created>1670081097692</created>
@@ -202,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670509143758</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="day 8 part1">
+      <created>1670516638769</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670516638769</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +233,8 @@
     <MESSAGE value="fix scripts" />
     <MESSAGE value="checkin" />
     <MESSAGE value="day 7 fail" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 7 fail" />
+    <MESSAGE value="day 8 part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 8 part1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -244,12 +248,6 @@
           <url>file://$PROJECT_DIR$/src/days/day7.ts</url>
           <line>118</line>
           <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/days/day8.ts</url>
-          <line>65</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="163" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
