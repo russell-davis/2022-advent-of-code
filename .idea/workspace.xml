@@ -125,6 +125,7 @@
       <workItem from="1670177475591" duration="6400000" />
       <workItem from="1670257887413" duration="13417000" />
       <workItem from="1670302676064" duration="1730000" />
+      <workItem from="1670426434979" duration="27379000" />
     </task>
     <task id="LOCAL-00001" summary="day 3 init">
       <created>1670081097692</created>
@@ -217,5 +218,28 @@
     <MESSAGE value="fix scripts" />
     <MESSAGE value="checkin" />
     <option name="LAST_COMMIT_MESSAGE" value="checkin" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/days/day7.ts</url>
+          <line>129</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/days/day7.ts</url>
+          <line>118</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/days/day7.ts" line="91">
+        <watch expression="root;" language="TypeScript" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>
